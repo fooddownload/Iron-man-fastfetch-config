@@ -1,0 +1,110 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "file",
+        "source": "~/.config/fastfetch/arch-reactor.txt",
+        "color": {
+            "1": "cyan",
+            "2": "red",
+            "3": "yellow"
+        },
+        "padding": {
+            "top": 1,
+            "right": 3
+        }
+    },
+    "display": {
+        "separator": " ➜  "
+    },
+    "modules": [
+        "break",
+        {
+            "type": "custom",
+            "format": " \u001b[36m[LEGIONAIRE-OS v6.9]\u001b[0m"
+        },
+        "break",
+
+        /* --- OS / KERNEL GROUP (Red - 31) --- */
+        {
+            "type": "os",
+            "key": "SYSTEM ",
+            "keyColor": "31"
+        },
+        {
+            "type": "kernel",
+            "key": " ├ CORE PROTOCOL ",
+            "keyColor": "31"
+        },
+        {
+            "type": "packages",
+            "key": " ├ MODULES LOADED",
+            "keyColor": "31"
+        },
+        {
+            "type": "shell",
+            "key": " ├ COMMAND LINK  ",
+            "keyColor": "31"
+        },
+        {
+            "type": "uptime",
+            "key": " └ ACTIVE TIME   ",
+            "keyColor": "31"
+        },
+        "break",
+
+        /* --- DISPLAY / INTERFACE GROUP (Gold - 33) --- */
+        {
+            "type": "wm",
+            "key": "HUD    ",
+            "keyColor": "33"
+        },
+        {
+            "type": "wmtheme",
+            "key": " ├ VISOR THEME   ",
+            "keyColor": "33"
+        },
+        {
+            "type": "icons",
+            "key": " ├ MATRIX ICONS  ",
+            "keyColor": "33"
+        },
+        {
+            "type": "terminal",
+            "key": " └ TERMINAL LINK ",
+            "keyColor": "33"
+        },
+        "break",
+
+        /* --- HARDWARE / POWER GROUP (Cyan Glow - 36) --- */
+        {
+            "type": "host",
+            "key": "ARMOR  ",
+            "keyColor": "36"
+        },
+        {
+            "type": "cpu",
+            "key": " ├ ARC REACTOR   ",
+            "keyColor": "36"
+        },
+        {
+            "type": "gpu",
+            "key": " ├ VISOR DISPLAY ",
+            "keyColor": "36"
+        },
+        {
+            "type": "memory",
+            "key": " ├ BUFFERS       ",
+            "keyColor": "36"
+        },
+        {
+            "type": "battery",
+            "key": " └ SUIT POWER    ",
+            "keyColor": "36"
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "circle"
+        }
+    ]
+}
